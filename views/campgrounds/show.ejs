@@ -48,7 +48,7 @@
         </div>
     </div>
     <div class="col-6">
-        <div id='map' class="mb-3" style='width: 400px; height: 300px;'>
+        <div id='map' class="mb-3">
         </div>
         <% if(currentUser) { %>
         <div class="mb-3">
@@ -103,6 +103,6 @@
 
 <script>
     const mapToken = '<%-process.env.MAPBOX_TOKEN%>';
-    const campground = <%- JSON.stringify(campground)%>;
+    const campground = <%- JSON.stringify(campground) %>;
 </script>
 <script src="/javascripts/showPageMap.js"></script>
